@@ -1010,10 +1010,6 @@ button,input,select,textarea,label{
     right:-100px;
     width:1440px;
     height:324px;
-    background-image:url("../images/header-illustration-light.svg")
-}
-.lights-off .site-header::before{
-    background-image:url("../images/header-illustration-dark.svg")
 }
 .site-header-inner{
     position:relative;
