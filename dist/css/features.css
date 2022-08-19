@@ -84,7 +84,7 @@ h1 {
 .flip > .front h2{
   font-size: 2.0rem
 }
-@media (max-width: 1280px){
+@media (max-width: 900px){
   .flip{
     width: 100%;
   }
