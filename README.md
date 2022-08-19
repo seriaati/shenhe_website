@@ -1,4 +1,3 @@
 # shehe_website
 
-This website is not made by me! I found it some where on the internet 😅.
-I can't find who's the author though, if you do, please let me know.
+The styles (css) of this website are not made by me! Unforunately I can't find the author who made them 😅, if you happen to know, please send a message to me on discord (seria#5334).
