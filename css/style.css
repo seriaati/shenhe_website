@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1c3c70;
-    --secondary: #352f87;
+    --primary: #3C8DBC;
+    --secondary: #B1D8F5;
     --light: #F0F6FF;
     --dark: #262B47;
 }
@@ -319,8 +319,8 @@ h6,
 /*** Screenshot ***/
 .screenshot-carousel {
     position: relative;
-    width: 253px;
-    height: 500px;
+    width: 230px;
+    height: 470px;
     padding: 15px;
     margin-right: 30px;
 }
@@ -333,14 +333,14 @@ h6,
     top: 0;
     left: 0;
     background: url(../img/screenshot-frame.png) center center no-repeat;
-    background-size: 253px 500px;
+    background-size: 230px 470px;
     z-index: 1;
 }
 
 .screenshot-carousel .owl-item img {
     position: relative;
     width: 223px;
-    height: 470px;
+    height: 440px;
 }
 
 .screenshot-carousel .owl-dots {
@@ -360,7 +360,6 @@ h6,
     margin: 5px 0;
     width: 15px;
     height: 15px;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     border-radius: 15px;
     transition: .5s;
 }
@@ -368,17 +367,17 @@ h6,
 .screenshot-carousel .owl-dot::after {
     position: absolute;
     content: "";
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     top: 5px;
     left: 5px;
     background: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
-.screenshot-carousel .owl-dot.active {
+/* .screenshot-carousel .owl-dot.active {
     box-shadow: 0 0 10px var(--dark);
-}
+} */
 
 
 /*** Testimonial ***/
