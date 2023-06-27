@@ -2,583 +2,669 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <title>FitApp - Mobile App HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <title>Shenhe - Your personal Genshin secretary</title>
-  <meta content="Shenhe - Your personal Genshin secretary" property="og:title" />
-  <meta content="Shenhe is a discord bot that provides numerous convenient features for the game Genshin Impact" property="og:description" />
-  <meta content="https://seriaati.github.io/shenhe_website/" property="og:url" />
-  <meta property="og:type" content="website">
-  <meta content="#8d84e6" data-react-helmet="true" name="theme-color" />
-  <meta content="Shenhe is a discord bot that provides numerous convenient features for the game Genshin Impact" name="description">
-  <meta name="og:image" content="https://seriaati.github.io/shenhe_website/assets/img/hero-img.png">
-  <meta content="Genshin Impact, Discord, discord bot, bot, genshin, calculator, todo, utility, todo list" name="keywords">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Shenhe - v1.11.0
-  * Template URL: https://bootstrapmade.com/Shenhe-bootstrap-startup-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span>Shenhe</span>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Spotlight</a></li>
-          <li><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
-          <li class="dropdown"><a href="#"><i class="bi bi-globe2"></i><i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">English</a></li>
-              <li><a href="index-zh-TW.html">繁體中文</a></li>
-            </ul>
-          </li>
-          <li><a class="getstarted scrollto" href="https://bit.ly/shenhe_bot" target="_blank">Invite Shenhe</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Your personal Genshin secretary</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Shenhe is a discord bot that provides numerous convenient features for the game Genshin Impact</h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="https://bit.ly/shenhe_bot" target="_blank" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Invite Shenhe</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-          </div>
         </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-        </div>
-      </div>
-    </div>
+        <!-- Spinner End -->
 
-  </section><!-- End Hero -->
 
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Feature Spotlight</h3>
-              <h2>Easily share and flex your builds</h2>
-              <p>
-                With the /profile command and your Genshin UID, Shenhe draws beautiful character build cards for you to share with your friends, flex on other people, or post for profile reviews.
-              </p>
-              <div class="text-center text-lg-start">
-                <a href="https://bit.ly/shenhe_bot" target="_blank" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Try it out now</span>
-                  <i class="bi bi-arrow-right"></i>
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">FitApp</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-              </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#feature" class="nav-item nav-link">Feature</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#review" class="nav-item nav-link">Review</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Start Free Trial</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">The Revolutionary App That Helps To Control Your Own Fitness</h1>
+                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
+                            <a href="" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/about.png" class="img-fluid" alt="">
-          </div>
-
         </div>
-      </div>
+        <!-- Navbar & Hero End -->
 
-    </section><!-- End About Section -->
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-server"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="939" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Servers</p>
-              </div>
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">About App</h5>
+                        <h1 class="mb-4">#1 App For Your Fitness</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                        <p class="text-primary-gradient mb-0">Active Install</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                        <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-pencil" style="color: #ee6c20;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="3975" data-purecounter-duration="1" class="purecounter"></span>
-                <p>GitHub Commits</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-key" style="color: #15be56;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1046" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Registered Accounts</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-people" style="color: #bb0852;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="165421" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Users</p>
-              </div>
-            </div>
-          </div>
-
         </div>
+        <!-- About End -->
 
-      </div>
-    </section><!-- End Counts Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>features</h2>
-          <p>Damage Calculator</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <img src="assets/img/features.svg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
-            <div class="row align-self-center gy-4">
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Fully automatic</h3>
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">App Features</h5>
+                    <h1 class="mb-5">Awesome Features</h1>
                 </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Calculates character and equipment conditionals</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">High Resolution</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-layer-group text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Retina Ready</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Editable Data</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Fully Secured</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Cloud Storage</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Fully Responsive</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Select custom teammates</h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Choose reaction types</h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Show off to your friends</h3>
-                </div>
-              </div>
-
-              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Powered by Genshin Optimizer</h3>
-                </div>
-              </div>
-
             </div>
-          </div>
-
-        </div> <!-- / row -->
-
-        <!-- Feature Tabs -->
-        <div class="row feture-tabs" data-aos="fade-up">
-          <div class="col-lg-6">
-            <h3>Your personal Genshin secretary</h3>
-
-            <!-- Tabs -->
-            <ul class="nav nav-pills mb-3">
-              <li>
-                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Reminders</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Calculator + Todo List</a>
-              </li>
-            </ul><!-- End Tabs -->
-
-            <!-- Tab Content -->
-            <div class="tab-content">
-
-              <div class="tab-pane fade show active" id="tab1">
-                <p>Remind you on Discord under different situations.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Talent notification</h4>
-                </div>
-                <p>Select characters and get notified when their talent domains are farmable.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Weapon notification</h4>
-                </div>
-                <p>Select weapons and get notified when their ascension material domains are farmable.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Resin notification</h4>
-                </div>
-                <p>Set a resin threshold and you're good to go! Shenhe will remind you when your resin number exceeds the threshold.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Realm currency notification</h4>
-                </div>
-                <p>Never forget to claim your serenitea pot realm currencies :)</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Parametric transformer notification</h4>
-                </div>
-                <p>Get notified when your PT is ready to use.</p>
-              </div><!-- End Tab 1 Content -->
-
-              <div class="tab-pane fade show" id="tab2">
-                <p>Calculate the number of materials needed for upgrading a character or a weapon, including unreleased characters.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Character Calculator</h4>
-                </div>
-                <p>Specify the target character and talent levels, then calculate the number of different materials needed for upgrading them.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Weapon Calculator</h4>
-                </div>
-                <p>Same as the character calculator, but for weapons</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Todo list</h4>
-                </div>
-                <p>Put the materials you have calculated into the todo list and keep track of their amounts.</p>
-              </div><!-- End Tab 2 Content -->
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
-          </div>
-
-        </div><!-- End Feature Tabs -->
-
-        <!-- Feature Icons -->
-        <div class="row feature-icons" data-aos="fade-up">
-          <h3>Small features that you'll love</h3>
-
-          <div class="row">
-
-            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/features-3.svg" class="img-fluid p-4" alt="">
-            </div>
-
-            <div class="col-xl-8 d-flex content">
-              <div class="row align-self-center gy-4">
-
-                <div class="col-md-6 icon-box" data-aos="fade-up">
-                  <i class="bi-check-all"></i>
-                  <div>
-                    <h4>Auto daily check in</h4>
-                    <p>Shenhe claims the Hoyolab check in reward for you everyday</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi-journal-richtext"></i>
-                  <div>
-                    <h4>Real time notes</h4>
-                    <p>View your resin, realm currency, dailies, and expedition status in real time</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi-book"></i>
-                  <div>
-                    <h4>Traveler's diary</h4>
-                    <p>View your primogem and mora earning logs, compare with last month's earnings, and see which category earns the most</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi-search"></i>
-                  <div>
-                    <h4>Search</h4>
-                    <p>Search anything Genshin related, including weapons, characters, artifacts, and items.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi-pin-map-fill"></i>
-                  <div>
-                    <h4>World exploration</h4>
-                    <p>View your percentage of world epxloration in different areas of Genshin</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                  <i class="bi-clipboard-data"></i>
-                  <div>
-                    <h4>Stat overview</h4>
-                    <p>View the number of chests you have opened, active days, number of characters, and oculi numbers</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div><!-- End Feature Icons -->
-
-      </div>
-
-    </section><!-- End Features Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>FAQ</h2>
-          <p>Frequently Asked Questions</p>
-        </header>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- F.A.Q List 1-->
-            <div class="accordion accordion-flush" id="faqlist1">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    How do I get started?
-                  </button>
-                </h2>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    Use either the /register or /accounts command to get started. You can also use the /help command to view all the commands.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    What is a Cookie?
-                  </button>
-                </h2>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    A Cookie is an encrypted string that is stored in your browser, and it is used to identify you and your account. Shenhe asks you to input this string in order to gain access to your Hoyolab account, please note that I will not have access to your Genshin Imapct account, they are different. You can remove your account data at any time by using the /accounts command.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    Is my data safe?
-                  </button>
-                </h2>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    Yes, your data is safe. I do not have access to your Hoyolab account, and I do not store your Hoyolab cookie. Your data is stored in a database that is only accessible by me, and I will not share your data with anyone.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-
-            <!-- F.A.Q List 2-->
-            <div class="accordion accordion-flush" id="faqlist2">
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-                    How does the wish history import work?
-                  </button>
-                </h2>
-                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Genshin Impact loads your wish history from the server and store it in your device temporarily. Shenhe uses this data to import your wish history. Use the /wish import command to get started.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
-                    How does the daily auto check in work?
-                  </button>
-                </h2>
-                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Shenhe will use your Cookie to check in your Hoyolab daily at 1:00 AM UTC+7 everyday, this feature does not require additional setup, you only need a registered account that is linked to a Cookie.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
-                    Can I register with multiple accounts?
-                  </button>
-                </h2>
-                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Yes, with the Shenhe 5.0 update, you can register multiple accounts. You can use the /accounts command to manage your accounts.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
         </div>
+        <!-- Features End -->
 
-      </div>
 
-    </section><!-- End F.A.Q Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>Shenhe</span>
-            </a>
-            <p>Your personal Genshin secretary.</p>
-            <div class="social-links mt-3">
-              <a href="https://github.com/seriaati/shenhe_bot" class="github" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://discord.gg/b22kMKuwbS" class="discord" target="_blank"><i class="bi bi-discord"></i></a>
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Screenshot</h5>
+                        <h1 class="mb-4">User Friendly interface And Very Easy To Use Fitness App</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Diam dolor diam ipsum et tempor sit</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Aliqu diam amet diam et eos labore</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Clita erat ipsum et lorem et sit</p>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/screenshot-1.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-2.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-3.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://discord.gg/b22kMKuwbS" target="_blank">Support server</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://crowdin.com/project/shenhe-bot" target="_blank">Crowdin</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="tos.html">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="pp.html">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Other Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://top.gg/bot/1000045812522430626" target="_blank">Top.gg</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://discordservers.tw/bots/1000045812522430626" target="_blank">DiscordTW</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://forum.gamer.com.tw/C.php?bsn=36730&snA=28478" target="_blank">Gamer Forum</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Me</h4>
-            <p>
-              <strong>Discord:</strong> seria#5334<br>
-              <strong>Email:</strong> seria.ati@gmail.com<br>
-            </p>
-
-          </div>
-
         </div>
-      </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">How It Works</h5>
+                    <h1 class="mb-5">3 Easy Steps</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Install the App</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Setup Your Profile</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Enjoy The Features</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Download</h5>
+                        <h1 class="mb-4">Download The Latest Version Of Our App</h1>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
+                    <h1 class="mb-5">Choose Your Plan</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yearly</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>24.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>114.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>124.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
+                                            <span>Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>134.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Testimonial</h5>
+                    <h1 class="mb-5">What Say Our Clients!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                    <h1 class="mb-5">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            </br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Shenhe</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
