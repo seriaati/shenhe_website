@@ -41,6 +41,10 @@ h6,
     font-weight: 500 !important;
 }
 
+.zh {
+    font-weight: 700 !important;
+}
+
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
